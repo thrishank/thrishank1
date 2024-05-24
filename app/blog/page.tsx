@@ -2,8 +2,9 @@ import axios from "axios";
 
 async function getData() {
   // await new Promise((r) => setTimeout(r, 10000));
-  const res = await axios.get("https://thrishank1.vercel.app/api");
-  return res.data;
+  // const res = await axios.get("https://thrishank1.vercel.app/api");
+  // return res.data;
+  return { method: "hello" };
 }
 
 export default async function Blog() {
