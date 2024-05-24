@@ -1,3 +1,3 @@
 export default function Loding() {
-  return <div>Loading....</div>;
+  return <div className="text-white">Loading....</div>;
 }

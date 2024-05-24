@@ -10,7 +10,7 @@ interface props {
 function Wrapper({ text, link, img }: props) {
   return (
     <Link href={link} className="flex items-center gap-3 text-[#B0B0B0]">
-      <Image alt={text} src={img} className="h-4"></Image>
+      <img alt={text} src={img} className="h-4"></img>
       <span>{text}</span>
     </Link>
   );
