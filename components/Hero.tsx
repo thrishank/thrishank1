@@ -33,7 +33,7 @@ const Hero = () => {
             className="text-center"
           />
           <p className="md:tracking-widest text-sm text-center mb-4 md:text-lg lg:text-2xl">
-            Hi! I'm Thrishank, a Full Stack Developer based in India
+            Hi! I&apos;m Thrishank, a Full Stack Developer based in India
           </p>
           <a href="">
             <Button text="Projects" icon={<FaArrowCircleRight />} postion="right" />
