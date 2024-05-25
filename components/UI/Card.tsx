@@ -36,8 +36,8 @@ const Card = ({
             {description}
           </p>
           <div className="flex justify-start gap-4 px-4">
-            {icons.map((item) => (
-              <img src={item} width={24} height={24}/>
+            {icons.map((item, i) => (
+              <img src={item} width={24} height={24} key={i} />
             ))}
           </div>
           <Link href={link} target="_blank">

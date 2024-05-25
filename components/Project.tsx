@@ -10,8 +10,9 @@ const Project = () => {
         <span className="text-purple"> Projects</span>
       </h1>
       <div className="flex flex-wrap justify-center items-baseline p-4 gap-16 md:gap-12 mt:10">
-        {projectsData.map((item) => (
+        {projectsData.map((item, i) => (
           <Card
+            key={i}
             img={item.img}
             title={item.title}
             description={item.des}
