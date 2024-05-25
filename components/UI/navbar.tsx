@@ -65,18 +65,18 @@ export const FloatingNav = ({
             key={`link=${idx}`}
             href={navItem.link}
             className={cn(
-              "text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+              "text-sm font-medium relative border-neutral-200 dark:border-white/[0.2]  dark:text-white px-1 sm:px-4 py-2"
             )}
           >
             <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm hover:text-purple">
+            <span className="sm:block text-sm hover:text-purple">
               {navItem.name}
             </span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent to-transparent h-px" />
           </Link>
         ))}
         <button
-          className="text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2"
+          className="text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] dark:text-white px-1 sm:px-4 py-2"
           onClick={() => {
             window.open("./resume.pdf", "_blank");
           }}
