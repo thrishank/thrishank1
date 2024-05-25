@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./provider";
-import { FloatingNav } from "@/components/UI/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <FloatingNav navItems={[{ name: "home", link: "" }]} />
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

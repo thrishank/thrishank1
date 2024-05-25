@@ -1,16 +1,16 @@
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
- 
+import { FloatingNav } from "@/components/UI/navbar";
+import { navItems } from "@/components/data";
+
 export default function Home() {
   return (
-    <div
-      style={{
-        // https://cssgradient.io/
-        background: "rgb(2,0,36)",
-        backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,36,1) 35%, rgba(0,212,255,1) 100%)",
-      }}
-    >
-      <Hero />
-    </div>
+    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
+      <div className="max-w-7xl w-full">
+        <FloatingNav navItems={navItems} />
+        <Hero />
+        <Grid />
+      </div>
+    </main>
   );
 }
