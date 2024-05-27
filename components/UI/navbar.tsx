@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { FaHome } from "react-icons/fa";
 
 export const FloatingNav = ({
   navItems,
@@ -70,7 +71,7 @@ export const FloatingNav = ({
           >
             <span className="block sm:hidden">{navItem.icon}</span>
             <span className="sm:block text-sm hover:text-purple">
-              {navItem.name}
+              {navItem.name === "Home" ? <FaHome /> : navItem.name}
             </span>
             <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent to-transparent h-px" />
           </Link>

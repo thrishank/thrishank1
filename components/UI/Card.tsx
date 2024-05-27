@@ -41,7 +41,7 @@ const Card = ({
             ))}
           </div>
           <Link href={link} target="_blank">
-            <p className="text-gray-700 px-4">View Source</p>
+            <p className="text-gray-500 px-4">View Source</p>
           </Link>
         </div>
       </BackgroundGradient>

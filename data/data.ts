@@ -2,9 +2,8 @@ export const navItems = [
   { name: "Home", link: "#home" },
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Blogs", link: "blog" },
+  { name: "Blogs", link: "#blog" },
 ];
-
 export const gridData = [
   {
     id: 1,
@@ -53,7 +52,7 @@ export const projectsData = [
     id: 1,
     title: "Walletpay - Full Stack Project",
     des: "Developed a monorepo project with multiple applications, featuring server-side rendering, authentication, state management, database integration, and efficient build processes.",
-    img: "/p1.svg",
+    img: "/paytm.png",
     iconLists: ["/next.svg", "/ts.svg", "/express.svg", "/tail.svg"],
     link: "https://github.com/thrishank/walletpay",
   },
@@ -61,15 +60,15 @@ export const projectsData = [
     id: 2,
     title: "Overninja.com - Business Website",
     des: "An advanced business website with a robust admin panel for CMS. Developed complete backend infrastructure using the AWS-SDK (Lambda, S3, DyanmoDB, Amplify)",
-    img: "/p2.svg",
+    img: "/overninja.png",
     iconLists: ["/next.svg", "/aws.svg", "/tail.svg", "/js.svg"],
     link: "https://overninja.com",
   },
   {
     id: 3,
-    title: "CodeRunner",
+    title: "DevStudio- Backend Project",
     des: "An innovative platform where users can submit their code and receive outputs in real-time.",
-    img: "/p3.svg",
+    img: "/0101.jpg",
     iconLists: ["/dock.svg", "/re.svg", "/js.svg", "/express.svg"],
     link: "https://github.com/thrishank/",
   },
@@ -77,7 +76,7 @@ export const projectsData = [
     id: 4,
     title: "Sunwise",
     des: "A platform dedicated to spreading awareness about solar energy and its benefits.",
-    img: "/p4.svg",
+    img: "/sunwise.png",
     iconLists: ["/js.svg", "/html.svg", "/css.svg", "/vercel.svg"],
     link: "https://sunwise.vercel.app",
   },
@@ -128,5 +127,24 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+];
+
+export const blogData = [
+  {
+    title: "Linux Commands every beginner should know",
+    text: "This introduces some of the essential Linux commands for beginners. Beginners should know how to navigate directories, list contents, view the current directory, copy files, and delete files in Linux.",
+    link: "https://codedamn.com/news/linux/top-linux-commands-every-beginner-should-know",
+  },
+
+  {
+    title: "How to Set up Visual Studio Code for C++ Programming",
+    text: "  Here, you'll find guides and tips on setting up and using Visual Studio Code for C and C++ programming. Whether you're a beginner or looking to refine your skills, this blog offers practical advice to help you streamline your coding workflow. Let's dive into the world of efficient and effective C/C++ development with VS Code!",
+    link: "https://codedamn.com/news/c/how-to-set-up-visual-studio-code-for-c-and-c-programming",
+  },
+  {
+    title: "How to center a div, text and more with raw CSS ?",
+    text: " The most difficult thing a web developer has to do is center a div horizontally and vertically using CSS. There are 100 ways to get the job done but there are some popular ways like using flex, grid, and making position absolute. In this article, as we go ahead we will discuss these top 3 ways in detail.",
+    link: "https://codedamn.com/news/frontend/how-to-center-a-div-text-and-more-with-css",
   },
 ];
