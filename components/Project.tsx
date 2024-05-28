@@ -6,8 +6,9 @@ const Project = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading pb-8">
-        I&apos;ve been building a lot of
-        <span className="text-purple"> Projects</span>
+        Recent
+        <span className="text-purple"> Projects </span>
+        I Built
       </h1>
       <div className="flex flex-wrap justify-center items-baseline p-4 gap-16 md:gap-12 mt:10">
         {projectsData.map((item, i) => (
