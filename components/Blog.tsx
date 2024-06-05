@@ -1,8 +1,8 @@
-import { blogData } from "@/data/data";
-import axios from "axios";
-import Link from "next/link";
-import React from "react";
-import { Meteors } from "./UI/meteors";
+import { blogData } from '@/data/data';
+import axios from 'axios';
+import Link from 'next/link';
+import React from 'react';
+import { Meteors } from './UI/meteors';
 
 async function getData() {
   // const res = await axios.get("");

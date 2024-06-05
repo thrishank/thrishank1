@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios from 'axios';
 
 async function getData() {
   await new Promise((r) => setTimeout(r, 10000));
-  const res = await axios.get("https://thrishank1.vercel.app/api");
+  const res = await axios.get('https://thrishank1.vercel.app/api');
   return res.data;
 }
 

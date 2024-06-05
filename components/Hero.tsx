@@ -1,8 +1,8 @@
-import React from "react";
-import { Spotlight } from "./UI/spotlight";
-import { TextGenerateEffect } from "./UI/text-generate";
-import Button from "./UI/button";
-import { FaArrowCircleRight } from "react-icons/fa";
+import React from 'react';
+import { Spotlight } from './UI/spotlight';
+import { TextGenerateEffect } from './UI/text-generate';
+import Button from './UI/button';
+import { FaArrowCircleRight } from 'react-icons/fa';
 
 const Hero = () => {
   return (

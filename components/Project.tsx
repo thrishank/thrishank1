@@ -1,14 +1,13 @@
-import { projectsData } from "@/data/data";
-import React from "react";
-import Card from "./UI/Card";
+import { projectsData } from '@/data/data';
+import React from 'react';
+import Card from './UI/Card';
 
 const Project = () => {
   return (
     <div className="py-20" id="projects">
       <h1 className="heading pb-8">
         Recent
-        <span className="text-purple"> Projects </span>
-        I Built
+        <span className="text-purple"> Projects </span>I Built
       </h1>
       <div className="flex flex-wrap justify-center items-baseline p-4 gap-16 md:gap-12 mt:10">
         {projectsData.map((item, i) => (

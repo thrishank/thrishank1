@@ -1,8 +1,8 @@
-"use client";
-import Link from "next/link";
-import React from "react";
-import { BackgroundGradient } from "./CardGradient";
-import Image from "next/image";
+'use client';
+import Link from 'next/link';
+import React from 'react';
+import { BackgroundGradient } from './CardGradient';
+import Image from 'next/image';
 
 const Card = ({
   img,

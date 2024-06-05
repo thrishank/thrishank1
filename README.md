@@ -13,3 +13,7 @@ UI- Components
 
 Card to display on the main page - https://ui.aceternity.com/components/meteors
 on the blog page add this effect - https://ui.aceternity.com/components/tracing-beam
+
+add the blogs sections write the backend logic
+
+add the contact me Section

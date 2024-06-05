@@ -1,12 +1,12 @@
-"use client";
-import { cn } from "@/utils/cn";
-import Button from "./button";
-import { BackgroundGradientAnimation } from "./BackgroundGradient";
-import { GlobeDemo } from "./GridGlobe";
-import { IoCopyOutline } from "react-icons/io5";
-import Lottie from "react-lottie";
-import { useState } from "react";
-import animationData from "@/data/confetti.json";
+'use client';
+import { cn } from '@/utils/cn';
+import Button from './button';
+import { BackgroundGradientAnimation } from './BackgroundGradient';
+import { GlobeDemo } from './GridGlobe';
+import { IoCopyOutline } from 'react-icons/io5';
+import Lottie from 'react-lottie';
+import { useState } from 'react';
+import animationData from '@/data/confetti.json';
 export const BentoGrid = ({
   className,
   children,
@@ -17,8 +17,8 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto",
-        className
+        'grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto',
+        className,
       )}
     >
       {children}
@@ -51,47 +51,47 @@ export const BentoGridItem = ({
     autoplay: copied,
     animationData: animationData,
     rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
+      preserveAspectRatio: 'xMidYMid slice',
     },
   };
   const handleCopy = () => {
-    console.log("handleCopy function called");
-    const text = "thrishankkalluru@gmail.com";
+    console.log('handleCopy function called');
+    const text = 'thrishankkalluru@gmail.com';
     navigator.clipboard
       .writeText(text)
       .then(() => {
         setCopied(true);
-        console.log("Email copied to clipboard");
+        console.log('Email copied to clipboard');
       })
       .catch((err) => {
-        console.error("Failed to copy email: ", err);
+        console.error('Failed to copy email: ', err);
       });
   };
   return (
     <div
       className={cn(
-        "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-        className
+        'row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4',
+        className,
       )}
       style={{
-        background: "rgb(2,0,36)",
+        background: 'rgb(2,0,36)',
         backgroundColor:
-          "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,36,1) 35%, rgba(0,212,255,1) 100%)",
+          'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(26,26,36,1) 35%, rgba(0,212,255,1) 100%)',
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      <div className={`${id === 6 && 'flex justify-center'} h-full`}>
         <div className="w-full h-full absolute">
           {img && (
             <img
               src={img}
               alt={img}
-              className={cn(imgClassName, "object-cover, object-center")}
+              className={cn(imgClassName, 'object-cover, object-center')}
             />
           )}
         </div>
         <div
           className={`absolute right-0 -bottom-5 ${
-            id === 5 && "w-full opacity-80"
+            id === 5 && 'w-full opacity-80'
           } `}
         >
           {spareImg && (
@@ -113,7 +113,7 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-60 flex flex-col px-5 p-5 lg:p-10"
+            'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-60 flex flex-col px-5 p-5 lg:p-10',
           )}
         >
           <div
@@ -128,7 +128,7 @@ export const BentoGridItem = ({
             <div className="mt-5 relative">
               <div
                 className={`absolute -bottom-5 right-0 ${
-                  copied ? "block" : "block"
+                  copied ? 'block' : 'block'
                 }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
@@ -136,7 +136,7 @@ export const BentoGridItem = ({
               </div>
 
               <Button
-                text={copied ? "Email is Copied!" : "Copy my email address"}
+                text={copied ? 'Email is Copied!' : 'Copy my email address'}
                 icon={<IoCopyOutline />}
                 postion="left"
                 otherClass="!bg-[#161A31]"
