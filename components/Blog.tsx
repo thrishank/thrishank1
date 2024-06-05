@@ -12,10 +12,10 @@ async function getData() {
 const Card = ({ title, text, link }: any) => {
   return (
     <div className="">
-      <div className=" w-full relative max-w-xs ">
-        <div className="absolute inset-0 h-full w-full transform scale-[0.80] rounded-full blur-3xl" />
-        <div className="relative shadow-xl bg-gray-900 border border-gray-800  px-4 py-8 h-full overflow-hidden rounded-2xl flex flex-col justify-end items-start">
-          <div className="h-5 w-5 rounded-full border flex items-center justify-center mb-4 border-gray-500">
+      <div className="relative w-full max-w-xs">
+        <div className="absolute inset-0 h-full w-full scale-[0.80] transform rounded-full blur-3xl" />
+        <div className="relative flex h-full flex-col items-start justify-end overflow-hidden rounded-2xl border border-gray-800 bg-gray-900 px-4 py-8 shadow-xl">
+          <div className="mb-4 flex h-5 w-5 items-center justify-center rounded-full border border-gray-500">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,18 +32,18 @@ const Card = ({ title, text, link }: any) => {
             </svg>
           </div>
 
-          <h1 className="font-bold text-xl text-white mb-4 relative z-50">
+          <h1 className="relative z-50 mb-4 text-xl font-bold text-white">
             {title}
           </h1>
 
-          <p className="font-normal text-left text-slate-500 mb-4 relative z-50 line-clamp-4">
+          <p className="relative z-50 mb-4 line-clamp-4 text-left font-normal text-slate-500">
             {text}
           </p>
 
           <Link
             href={link}
             target="_blank"
-            className="border px-4 py-1 rounded-lg  border-gray-500 text-gray-300"
+            className="rounded-lg border border-gray-500 px-4 py-1 text-gray-300"
           >
             Read More
           </Link>
@@ -61,7 +61,7 @@ const Blog = async () => {
       <h1 className="heading pb-8">
         My Recent <span className="text-purple">Blogs</span>
       </h1>
-      <div className="flex flex-wrap justify-center items-baseline p-4 gap-16 md:gap-12 mt:10">
+      <div className="mt:10 flex flex-wrap items-baseline justify-center gap-16 p-4 md:gap-12">
         {blogs.map((item, i) => (
           <Card key={i} title={item.title} text={item.text} link={item.link} />
         ))}

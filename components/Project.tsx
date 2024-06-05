@@ -9,7 +9,7 @@ const Project = () => {
         Recent
         <span className="text-purple"> Projects </span>I Built
       </h1>
-      <div className="flex flex-wrap justify-center items-baseline p-4 gap-16 md:gap-12 mt:10">
+      <div className="mt:10 flex flex-wrap items-baseline justify-center gap-16 p-4 md:gap-12">
         {projectsData.map((item, i) => (
           <Card
             key={i}

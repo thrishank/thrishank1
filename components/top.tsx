@@ -18,7 +18,7 @@ function Wrapper({ text, link, img }: props) {
 
 function Social() {
   return (
-    <div className="flex flex-row gap-4 cursor-pointer py-4">
+    <div className="flex cursor-pointer flex-row gap-4 py-4">
       <Wrapper
         text="Github"
         link="https://github.com/thrishank"
@@ -45,7 +45,7 @@ function Social() {
 
 export default function Top() {
   return (
-    <div className="flex flex-col justify-start items-start pt-48">
+    <div className="flex flex-col items-start justify-start pt-48">
       {/* <div className="rounded-full overflow-y-hidden h-32 w-32 relative py-8">
         <Image
           src="/thris.jpg"

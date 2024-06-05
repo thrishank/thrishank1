@@ -19,7 +19,7 @@ const Card = ({
 }) => {
   return (
     <>
-      <BackgroundGradient className="rounded-[22px] sm:p-6 bg-[#020024]">
+      <BackgroundGradient className="rounded-[22px] bg-[#020024] sm:p-6">
         <div className="flex flex-col justify-start gap-4">
           <Image
             src={img}
@@ -29,10 +29,10 @@ const Card = ({
             className="object-contain"
           />
 
-          <h2 className="font-bold text-white px-4 line-clamp-1 text-base md:text-xl lg:text-2xl">
+          <h2 className="line-clamp-1 px-4 text-base font-bold text-white md:text-xl lg:text-2xl">
             {title}
           </h2>
-          <p className="font-light text-sm md:text-base lg:text-xl lg:font-normal text-gray-400 px-4 line-clamp-4 md:w-[300px] lg:w-[500px]">
+          <p className="line-clamp-4 px-4 text-sm font-light text-gray-400 md:w-[300px] md:text-base lg:w-[500px] lg:text-xl lg:font-normal">
             {description}
           </p>
           <div className="flex justify-start gap-4 px-4">
@@ -41,7 +41,7 @@ const Card = ({
             ))}
           </div>
           <Link href={link} target="_blank">
-            <p className="text-gray-500 px-4">View Source</p>
+            <p className="px-4 text-gray-500">View Source</p>
           </Link>
         </div>
       </BackgroundGradient>

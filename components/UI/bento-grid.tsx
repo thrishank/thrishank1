@@ -17,7 +17,7 @@ export const BentoGrid = ({
   return (
     <div
       className={cn(
-        'grid grid-cols-1 md:grid-cols-6 lg:grid-cols-5 md:grid-row-7 gap-4 lg:gap-8 mx-auto',
+        'md:grid-row-7 mx-auto grid grid-cols-1 gap-4 md:grid-cols-6 lg:grid-cols-5 lg:gap-8',
         className,
       )}
     >
@@ -70,7 +70,7 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        'row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4',
+        'group/bento relative row-span-1 flex flex-col justify-between space-y-4 overflow-hidden rounded-3xl border border-white/[0.1] shadow-input transition duration-200 hover:shadow-xl dark:shadow-none',
         className,
       )}
       style={{
@@ -80,7 +80,7 @@ export const BentoGridItem = ({
       }}
     >
       <div className={`${id === 6 && 'flex justify-center'} h-full`}>
-        <div className="w-full h-full absolute">
+        <div className="absolute h-full w-full">
           {img && (
             <img
               src={img}
@@ -90,7 +90,7 @@ export const BentoGridItem = ({
           )}
         </div>
         <div
-          className={`absolute right-0 -bottom-5 ${
+          className={`absolute -bottom-5 right-0 ${
             id === 5 && 'w-full opacity-80'
           } `}
         >
@@ -99,25 +99,25 @@ export const BentoGridItem = ({
               src={spareImg}
               alt={spareImg}
               //   width={220}
-              className="object-cover object-center w-full h-full"
+              className="h-full w-full object-cover object-center"
             />
           )}
         </div>
 
         {id === 6 && (
           <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
+            <div className="pointer-events-none absolute inset-0 z-50 flex items-center justify-center px-4 text-center text-3xl font-bold text-white md:text-4xl lg:text-7xl"></div>
           </BackgroundGradientAnimation>
         )}
 
         <div
           className={cn(
             titleClassName,
-            'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-60 flex flex-col px-5 p-5 lg:p-10',
+            'relative flex min-h-60 flex-col p-5 px-5 transition duration-200 group-hover/bento:translate-x-2 md:h-full lg:p-10',
           )}
         >
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10 `}
+            className={`z-10 max-w-96 font-sans text-lg font-bold lg:text-3xl`}
           >
             {title}
           </div>
@@ -125,7 +125,7 @@ export const BentoGridItem = ({
           {id === 2 && <GlobeDemo />}
 
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="relative mt-5">
               <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? 'block' : 'block'
