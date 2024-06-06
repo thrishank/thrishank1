@@ -127,21 +127,18 @@ export const BentoGridItem = ({
           {id === 6 && (
             <div className="relative mt-5">
               <div
-                className={`absolute -bottom-5 right-0 ${
-                  copied ? 'block' : 'block'
-                }`}
+                className={`absolute -bottom-5 right-0 ${copied ? 'block' : 'hidden'}`}
               >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
                 <Lottie options={defaultOptions} height={200} width={400} />
               </div>
 
-              <Button
-                text={copied ? 'Email is Copied!' : 'Copy my email address'}
-                icon={<IoCopyOutline />}
-                postion="left"
-                otherClass="!bg-[#161A31]"
-                handleClick={handleCopy}
-              />
+              <button
+                onClick={handleCopy}
+                className="inline-flex h-12 w-full animate-shimmer cursor-pointer items-center justify-center gap-2 rounded-lg border border-slate-800 bg-gradient-to-r from-gray-900 to-gray-700 px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 md:mt-10 md:w-60"
+              >
+                <IoCopyOutline />
+                {copied ? 'Email Copied!' : 'Copy My Email Address'}
+              </button>
             </div>
           )}
         </div>
