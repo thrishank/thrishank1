@@ -21,14 +21,6 @@ const Card = ({
     <>
       <BackgroundGradient className="rounded-[22px] bg-[#020024] sm:p-6">
         <div className="flex flex-col justify-start gap-4">
-          <Image
-            src={img}
-            alt="Project"
-            height={400}
-            width={400}
-            className="object-contain"
-          />
-
           <h2 className="line-clamp-1 px-4 text-base font-bold text-white md:text-xl lg:text-2xl">
             {title}
           </h2>

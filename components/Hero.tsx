@@ -28,7 +28,7 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
           <p className="mb-4 text-center text-sm md:text-lg md:tracking-widest lg:text-2xl">
-            Hi! I&apos;m Thrishank, a Freelance Full Stack Developer based in
+            Hi! Iapos&;m Thrishank, a Freelance Full Stack Developer based in
             India
           </p>
           <a href="#about">
